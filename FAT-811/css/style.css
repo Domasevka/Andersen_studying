@@ -1,0 +1,42 @@
+#block-1 input:checked {
+ border: 1px solid red;
+}
+#block-2 input:not([checked]) {
+ border: 1px solid red;
+}
+#block-3 #message, #block-3 li[id^="message-"] {
+ border: 1px solid red;
+ width: 100px;
+}
+#block-4 li[id^="message-"] {
+ border: 1px solid red;
+ width: 100px;
+}
+#block-5 a[href$=".zip"] {
+ border: 1px solid red;
+ width: 100px;
+}
+#block-6 li[data-action~='delete'] {
+ border: 1px solid red;
+ width: 100px;
+}
+#block-7 li:not([data-action~="delete"]) {
+ border: 1px solid red;
+ width: 100px;
+}
+#block-8 li:nth-child(2n) {
+ border: 1px solid red;
+ width: 100px;
+}
+#block-9 #widget-title + ul {
+ border: 1px solid red;
+ width: 150px;
+}
+#block-10 #widget-title ~ a {
+ border: 1px solid red;
+ width: 100px;
+}
+#block-11 #messages a:last-of-type {
+border: 1px solid red;
+width: 100px;
+}
