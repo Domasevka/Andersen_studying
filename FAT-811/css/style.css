@@ -1,8 +1,8 @@
-#block-1 input:checked {
- border: 1px solid red;
+#block-1 input[type="checkbox"] {
+ outline: 1px solid red;
 }
-#block-2 input:not([checked]) {
- border: 1px solid red;
+#block-2 input[type="checkbox"]:not(:checked) {
+ outline: 1px solid red;
 }
 #block-3 #message, #block-3 li[id^="message-"] {
  border: 1px solid red;
@@ -24,7 +24,7 @@
  border: 1px solid red;
  width: 100px;
 }
-#block-8 li:nth-child(2n) {
+#block-8 li:nth-child(even) {
  border: 1px solid red;
  width: 100px;
 }
@@ -36,7 +36,7 @@
  border: 1px solid red;
  width: 100px;
 }
-#block-11 #messages a:last-of-type {
+#block-11 #messages li:last-child a {
 border: 1px solid red;
 width: 100px;
 }

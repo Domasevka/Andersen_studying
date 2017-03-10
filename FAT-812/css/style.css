@@ -1,10 +1,6 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url('webfont.woff2') format('woff2'),
-         url('webfont.woff') format('woff');
-    }
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
-    font-family: "Montserrat-Regular","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -21,16 +17,16 @@ body {
     }
 header, section {
     display: block;
-}
+    }
 .section-wrapper {
     margin-left: auto;
     margin-right: auto;
     width: 1170px;
     position: relative;
-}
+    }
 a {
     text-decoration: none;
-}
+   }
 .logo {
     float: left;
     }
@@ -54,7 +50,6 @@ a {
 .section-header {
     margin-bottom: -2px;
     padding: 0;
-    overflow-x: hidden;
     text-align: center;
     background-color: #44433e;
     }
@@ -62,7 +57,7 @@ a {
     float: right;
     font-size: 12px;
     margin: 0;
-    padding-top: 55px;
+    padding-top: 52px;
     text-transform: uppercase;
     font-weight: 700;
     }
@@ -75,23 +70,29 @@ a {
     padding: 10px 10px;
     float: none;
     }
+.search-icon {
+    float: left;
+    background: url("../img/search_icon.png") no-repeat;
+    height: 24px;
+    width: 24px;
+    }
 .navbar .active a span{
     color: #18cfab;
     border-bottom: 2px solid;
-    padding-bottom: 48px;
+    padding-bottom: 50px;
     }
 .navbar a span:hover {
     color: #fff;
     padding: 10px 0px  0px;
     border-bottom: 2px solid #18cfab;
-    padding-bottom: 48px;
+    padding-bottom: 50px;
     }
 .section-home {
     background-color: #3c3c3c;
     text-align: center;
     }
 .section-home__title {
-    margin: 238px 0 23px 0;
+    margin: 238px 0 20px 0;
     color: #fff;
     }
 .section-home__title {
@@ -104,18 +105,19 @@ a {
 .section-home__title_main {
     color: #fff;
     font-size: 75px;
-    margin: 12px 0;
+    margin: 10px 0 0;
     text-transform: uppercase;
     }
 .section-home__title_features {
+    font-family: 'Montserrat-Extra-Light', sans-serif;
     font-size: 35px;
-    margin: 15px 0;
+    margin: 10px 0;
     color: #d4d4d4;
-    font-weight: 200;
     }
 .actions {
     padding: 130px;
-}
+    padding-left: 430px;
+    }
 .btn {
     border: medium none;
     border-radius: 3px;
@@ -127,19 +129,19 @@ a {
     height: 62px;
     line-height: 58px;
     outline: medium none;
-    padding: 0 35px;
-    margin: 0 10px;
+    padding: 0 36px;
+    margin: 0 12px;
     position: relative;
     transition: all 0.25s ease 0s;
-}
+    }
 .btn-turquoise {
     background-color: #18cfab;
     box-shadow: 0 3px 0 0 #fff inset;
-}
+    }
 .btn-turquoise:hover {
     background-color: #02c172;
     box-shadow: 0 3px 0 0 #bcb inset;
-}
+    }
 .btn-blue {
     background-color: #00cbf6;
     box-shadow: 0 3px 0 0 #fff inset;
@@ -147,4 +149,58 @@ a {
 .btn-blue:hover {
     background-color: #0097f6;
     box-shadow: 0 3px 0 0 #fff inset;
-}
+    }
+.actions-wrapper {
+    float: right;
+    display: inline-block;
+    padding-right: 120px;
+    margin-bottom: 105px;
+    }
+.actions-wrapper__field {
+    position: relative;
+    background-color: #1f1f1f;
+    height: 105px;
+    width: 170px;
+    margin-bottom: 18px;
+    }
+.slider__navigation {
+    float: center;
+    display: inline-block;
+    list-style: none;
+    }
+.slider__previous {
+    width: 26px;
+    height: 37px;
+    margin: 0px 20px 0 0;
+    text-indent: -9999px;
+    display: inline-block;
+    cursor: pointer;
+    background: #3c4140 none repeat scroll 0 0;
+    padding: 11px 17px;
+    }
+.slider__next {
+    width: 26px;
+    height: 37px;
+    margin: 0 0 0 20px;
+    text-indent: -9999px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 11px 17px;
+    background: #17cfab none repeat scroll 0 0;
+    border: 1px solid #17cfab;
+    }
+.icon-left-open {
+    float: left;
+    background: url("../img/icon-left-open.png") no-repeat;
+    height: 27px;
+    width: 17px;
+    margin: 5px;
+    }
+.icon-right-open {
+    float: left;
+    background: url("../img/icon-right-open.png") no-repeat;
+    height: 27px;
+    width: 17px;
+    margin: 5px;
+    }
+
