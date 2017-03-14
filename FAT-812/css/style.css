@@ -183,7 +183,6 @@ a {
 }
 
 .slider__navigation {
-    float: center;
     display: inline-block;
     list-style: none;
 }
@@ -412,6 +411,7 @@ a {
     position: relative;
     background: #090f14;
     font-size: 0;
+    min-height: 680px;
 }
 
 .section-about__img {
@@ -427,7 +427,7 @@ a {
 .section-about__content {
     display: inline-block;
     text-align: left;
-    vertical-align: middle;
+
 }
 
 .section-about__title {
@@ -453,11 +453,11 @@ a {
     color: #fff;
     padding: 0;
     display: inline-block;
+    list-style-type: none;
 }
 
 .section-about__nav-item {
     float: left;
-    list-style-type: none;
 }
 
 .section-about__nav-item a {
@@ -544,6 +544,7 @@ a {
     margin: 0;
     padding: 0;
 }
+
 .section-about__img1 {
     background-color: #b3b3b3;
     width: 100%;
@@ -614,10 +615,103 @@ a {
 .section-work__title {
     font-size: 36px;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 87px;
 }
 
+.section-work__border {
 
+}
+
+.section-work__tab {
+
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px;
+    font-weight: 700;
+    color: #24413e;
+    padding: 0;
+}
+
+.section-work__tab:before {
+    background-image: url(../img/sprite.png);
+    background-position: -191px -110px;
+    width: 95px;
+    height: 10px;
+    margin: 20px auto 90px;
+}
+.section-work__tab:before {
+    content: '';
+    display: block;
+}
+
+.section-work__tab-item {
+    float: left;
+}
+
+.section-work__tab span {
+    background: #fff;
+    padding: 20px 26px;
+    border: 1px solid #ebebeb;
+}
+
+.section-work__tab a:hover {
+    color: #18cfab;
+    border-top: 3px solid #18cfab;
+    padding: 21px 0px;
+}
+
+.section-work__tab_active a {
+    color: #18cfab;
+    border-top: 3px solid #18cfab;
+    padding: 21px 0px;
+}
+.section-work__article {
+    font-size: 0;
+    margin: 84px 10px;
+    padding: 0;
+}
+
+.section-work__col {
+    font-size: 14px;
+    background: #00b294;
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    min-height: 207px;
+}
+
+.section-work__col_dark {
+    background: #24413e;
+}
+
+.section-work__col_light {
+    background: #8a8a8a;
+}
+
+.section-work__col-active {
+    background: #f8fcfe;
+    border-top: 3px solid #18cfab;
+    color: #18cfab;
+}
+
+.section-work__col-active p {
+    text-transform: uppercase;
+    color: #18cfab;
+}
+
+.section-work__col-active div {
+    color: #8a8a8a;
+}
+
+.section-work__col img {
+    display: block;
+    height: 100%;
+    margin: 20px auto 0;
+
+
+}
 
 @media screen and (max-width: 1450px) {
 
