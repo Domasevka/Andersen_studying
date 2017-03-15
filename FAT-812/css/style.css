@@ -64,8 +64,9 @@ a {
 }
 
 .navbar-item_icon {
-    margin-top: -4px;
+    margin-top: -5px;
     display: block;
+    margin-right: -4px;
 }
 
 .search-icon {
@@ -73,6 +74,7 @@ a {
     background: url("../img/search_icon.png") no-repeat;
     height: 24px;
     width: 24px;
+
 }
 
 .navbar .navbar-item__active a span {
@@ -136,12 +138,10 @@ a {
     border-radius: 3px;
     color: #fff;
     display: inline-block;
-    font-family: KievitPro, sans-serif;
     font-size: 12px;
     font-weight: 700;
     height: 63px;
     line-height: 59px;
-    outline: medium none;
     padding: 0 36px;
     margin: 0 12px;
     position: relative;
@@ -439,7 +439,7 @@ a {
 .section-about__border {
     background-image: url("../img/sprite.png");
     background-position: -95px -110px;
-    width: 95px;
+    width: 93px;
     height: 10px;
     margin-top: 24px;
     margin-left: 25%;
@@ -618,12 +618,7 @@ a {
     padding-top: 87px;
 }
 
-.section-work__border {
-
-}
-
 .section-work__tab {
-
     list-style-type: none;
     display: inline-block;
     font-size: 16px;
@@ -652,7 +647,13 @@ a {
 .section-work__tab span {
     background: #fff;
     padding: 20px 26px;
-    border: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.section-work__tab_active a:first-child {
+    border-left: 1px solid #ebebeb;
 }
 
 .section-work__tab a:hover {
@@ -666,9 +667,10 @@ a {
     border-top: 3px solid #18cfab;
     padding: 21px 0px;
 }
+
 .section-work__article {
     font-size: 0;
-    margin: 84px 10px;
+    margin: 84px 0 10px;
     padding: 0;
 }
 
@@ -699,20 +701,166 @@ a {
 .section-work__col-active p {
     text-transform: uppercase;
     color: #18cfab;
+    margin: 28px 0 6px;
 }
 
 .section-work__col-active div {
     color: #8a8a8a;
 }
 
-.section-work__col img {
+.section-work__col-active img {
     display: block;
     height: 100%;
-    margin: 20px auto 0;
-
-
+    margin: 44px auto 0;
 }
 
+.section-work__wrap {
+    margin: 71px 0 100px;
+}
+
+.section-work__btn {
+    background-color: #17cfab;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 61px;
+    margin: 0 12px;
+    padding: 0 24px;
+}
+
+.section-work__btn::before {
+    background-image: url(../img/sprite.png);
+    background-position: 0px -425px;
+    width: 18px;
+    height: 23px;
+}
+
+.section-work__btn::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 26px;
+}
+
+.section-work__btn:hover {
+    background-color: #00b294;
+    box-shadow: 0 #007e67 inset;
+}
+
+.service {
+    background: #fff;
+    text-align: center;
+    color: #4e4e4e;
+    margin: 102px 0 93px;
+    font-size: 0;
+    line-height: 25px;
+}
+
+.service__border {
+    display: inline-block;
+    background-image: url(../img/sprite.png);
+    background-position: 0px -110px;
+    width: 95px;
+    height: 10px;
+    margin-top: 19px;
+}
+
+.service__tab-wrapper {
+    margin-top: 77px;
+    padding: 0;
+}
+
+.service__tab {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+    padding: 0;
+    position: relative;
+}
+
+.service__tab-item {
+    float: left;
+}
+
+.service__tab a {
+    color: #797979;
+    background: #f8fcfe;
+    padding: 25px 39px;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.service__tab a:hover {
+    color: #fff;
+    background-color: #18cfab;
+    border: 1px solid #18cfab;
+}
+
+.service__tab_active a {
+    color: #fff;
+    background-color: #18cfab;
+    border: 1px solid #18cfab;
+}
+
+.service__tab a::after {
+    content: '';
+    position: absolute;
+    left: 73px;
+    bottom: -44px;
+    border: 12px solid transparent;
+    border-top: 10px solid #18cfab;
+}
+
+.service__img {
+    font-size: 14px;
+    margin-top: 32px;
+    text-align: left;
+}
+
+.service__img:before {
+    background-color: #797979;
+    width: 198px;
+    height: 139px;
+    margin: 4px 28px 0 0;
+}
+
+.service__img:before {
+    content: '';
+    float: left;
+}
+
+.purchase {
+    background: #40474b;
+    text-align: center;
+    color: #18cfab;
+    margin: 0;
+    font-size: 0;
+    line-height: 25px;
+}
+
+.purchase__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 130px;
+}
+
+.purchase__text {
+    font-size: 16px;
+    color: #d8d8d8;
+    margin: 0;
+    padding-top: 30px;
+}
+.purchase-btn {
+    margin: 74px 0 129px;
+}
 @media screen and (max-width: 1450px) {
 
     .actions-wrapper {
