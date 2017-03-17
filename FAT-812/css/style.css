@@ -783,7 +783,6 @@ a {
 
 .service__tab {
     list-style-type: none;
-    display: block;
     font-size: 16px;
     margin: 0;
     font-weight: 700;
@@ -1132,8 +1131,7 @@ a {
 }
 
 .pricing-columns__wrap {
-    margin: 58px 10px 20px;
-
+    margin: 59px 10px 100px;
 }
 
 .pricing-columns {
@@ -1156,7 +1154,7 @@ a {
 }
 
 .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.3)
+    box-shadow: 0 0 10px rgba(0,0,0,0.3)
 }
 
 .price__item {
@@ -1186,7 +1184,7 @@ a {
     padding: 39px;
 }
 
-.price__grey-active:hover {
+.price__grey-active {
     background-color: #18cfab;
 }
 
@@ -1195,7 +1193,7 @@ a {
 }
 
 .price__item_btn {
-    padding: 32px;
+    padding: 37px;
 }
 
 .price__button {
@@ -1208,11 +1206,35 @@ a {
     border-radius: 4px;
 }
 
-.price__button:hover {
+.price__button-active {
     background-color: #18cfab;
     border: 1px solid #18cfab;
-    }
+    color: white;
+    padding: 16px 49px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 4px;
+}
 
+.pricing-columns-active{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.pricing-columns-active::before {
+    background: #18cfab none repeat scroll 0 0;
+    color: #fff;
+    content: "OFFER";
+    font-size: 0.8rem;
+    right: -25px;
+    padding: 0 30px;
+    position: absolute;
+    top: 10px;
+    transform: rotateZ(45deg);
+    z-index: 3;
+}
 
 @media screen and (max-width: 1450px) {
 
