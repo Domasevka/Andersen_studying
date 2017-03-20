@@ -38,8 +38,8 @@
       <div class="actions-wrapper">
         <div class="actions-wrapper__field"></div>
         <div class="slider__navigation">
-           <div class="slider__previous"><a href="/"><i class="icon-left-open"></i></a></div>
-           <div class="slider__next"><a href="/"><i class="icon-right-open"></i></a></div>
+           <div class="slider__previous"><a href="#"><i class="icon-left-open"></i></a></div>
+           <div class="slider__next"><a href="#"><i class="icon-right-open"></i></a></div>
         </div>
       </div>
     </div>
@@ -168,9 +168,13 @@
          </div>
          <div class="section-work__article">
              <div class="section-work__col section-work__col_dark section-work__col-active">
-                 <img src="img/col_active.png">
+                 <div class="col-active__icons">
+                     <a class="fa-chain"></a>
+                     <a class="fa-search"></a>
+                 </div>
                  <p>creative design</p>
-                 <div>Web Design</div>
+                 <span>Web Design</span>
+                 <div class="overlay"></div>
              </div>
              <div class="section-work__col section-work__col_light"></div>
              <div class="section-work__col section-work__col_dark"></div>
@@ -232,7 +236,7 @@
                      <div class="section-news__col-date"><span>12<br>Feb</span></div>
                  </div>
                  <div class="section-news__col_bg">
-                     <p>Amazing image post</p>
+                     <span>Amazing image post</span>
                      <a href="#" class="section-news__col_text">By admin</a><a href="#">2 comment</a>
                  </div>
              </div>
@@ -241,7 +245,7 @@
                      <div class="section-news__col-date"><span>12<br>Feb</span></div>
                  </div>
                  <div class="section-news__col_bg">
-                     <p>Amazing blog post</p>
+                     <span>Amazing blog post</span>
                      <a href="#" class="section-news__col_text">By admin</a><a href="#">2 comment</a>
                  </div>
              </div>
@@ -250,7 +254,7 @@
                      <div class="section-news__col-date"><span>12<br>Feb</span></div>
                  </div>
                  <div class="section-news__col_bg">
-                     <p>Amazing blog post</p>
+                     <span>Amazing blog post</span>
                      <a href="#" class="section-news__col_text">By admin</a><a href="#">2 comment</a>
                  </div>
              </div>
@@ -259,7 +263,7 @@
                      <div class="section-news__col-date"><span>12<br>Feb</span></div>
                  </div>
                  <div class="section-news__col_bg">
-                     <p>Amazing blog post</p>
+                     <span>Amazing blog post</span>
                      <a href="#" class="section-news__col_text">By admin</a><a href="#">2 comment</a>
                  </div>
              </div>
@@ -268,7 +272,7 @@
                      <div class="section-news__col-date"><span>12<br>Feb</span></div>
                  </div>
                  <div class="section-news__col_bg">
-                     <p>Amazing blog post</p>
+                     <span>Amazing blog post</span>
                      <a href="#" class="section-news__col_text">By admin</a><a href="#">2 comment</a>
                  </div>
              </div>
@@ -277,7 +281,7 @@
                      <div class="section-news__col-date"><span>12<br>Feb</span></div>
                  </div>
                  <div class="section-news__col_bg">
-                     <p>Amazing blog post</p>
+                     <span>Amazing blog post</span>
                      <a href="#" class="section-news__col_text">By admin</a><a href="#">2 comment</a>
                  </div>
              </div>
@@ -286,7 +290,7 @@
                      <div class="section-news__col-date"><span>12<br>Feb</span></div>
                  </div>
                  <div class="section-news__col_bg">
-                     <p>Amazing blog post</p>
+                     <span>Amazing blog post</span>
                      <a href="#" class="section-news__col_text">By admin</a><a href="#">2 comment</a>
                  </div>
              </div>
@@ -295,7 +299,7 @@
                      <div class="section-news__col-date"><span>12<br>Feb</span></div>
                  </div>
                  <div class="section-news__col_bg">
-                     <p>Amazing blog post</p>
+                     <span>Amazing blog post</span>
                      <a href="#" class="section-news__col_text">By admin</a><a href="#">2 comment</a>
                  </div>
              </div>
@@ -451,13 +455,13 @@
          <div class="team__wrap row">
              <div class="card card-active">
                  <div class="card__img">
-                     <div class="card__circle-wrap">
+                     <a href="#" class="card__circle-wrap">
                          <div class="card__circle"></div>
-                     </div>
+                     </a>
                  </div>
                  <div class="card__info">
-                     <p class="card__info_name">Al Masum</p>
-                     <p class="card__info_spec">Founder</p>
+                     <span class="card__info_name">Al Masum</span>
+                     <span class="card__info_spec">Founder</span>
                  </div>
                  <div class="card__social">
                      <a href="#"><i class="fa fa-facebook"></i></a>
@@ -469,8 +473,8 @@
              <div class="card">
                  <div class="card__img"></div>
                  <div class="card__info">
-                     <p class="card__info_name">Mis Liza</p>
-                     <p class="card__info_spec">UX Designer</p>
+                     <span class="card__info_name">Mis Liza</span>
+                     <span class="card__info_spec">UX Designer</span>
                  </div>
                  <div class="card__social">
                      <a href="#"><i class="fa fa-facebook"></i></a>
@@ -482,8 +486,8 @@
              <div class="card">
                  <div class="card__img"></div>
                  <div class="card__info">
-                     <p class="card__info_name">Hasan Mahmud</p>
-                     <p class="card__info_spec">Web Designer</p>
+                     <span class="card__info_name">Hasan Mahmud</span>
+                     <span class="card__info_spec">Web Designer</span>
                  </div>
                  <div class="card__social">
                      <a href="#"><i class="fa fa-facebook"></i></a>
@@ -495,8 +499,8 @@
              <div class="card">
                  <div class="card__img"></div>
                  <div class="card__info">
-                     <p class="card__info_name">Afifa Jannat</p>
-                     <p class="card__info_spec">Web Designer</p>
+                     <span class="card__info_name">Afifa Jannat</span>
+                     <span class="card__info_spec">Web Designer</span>
                  </div>
                  <div class="card__social">
                      <a href="#"><i class="fa fa-facebook"></i></a>
@@ -506,6 +510,39 @@
                  </div>
              </div>
          </div>
+     </div>
+ </section>
+ <section class="design row">
+     <div class="section-wrapper">
+         <h2 class="design__title">theham is not only wordpress theme</h2>
+         <h2 class="design__text">it’s also clean and creative design</h2>
+         <div class="design-img__wrap column-1">
+             <img src="img/design_img.png" alt="design">
+         </div>
+         <div class="design-list__wrap column-1">
+             <ul class="design__list-item">
+                 <li class="design-item"></li>
+                 <li class="design-item"></li>
+                 <li class="design-item"></li>
+                 <li class="design-item"></li>
+                 <li class="design-item"></li>
+                 <li class="design-item"></li>
+
+             </ul>
+             <ul class="design__list-text">
+                 <li>Clean Layout Design</li>
+                 <li>Many Style Portfolio Design</li>
+                 <li>Beautiful Blog Page</li>
+                 <li>Mega PSD Pack</li>
+                 <li>User Friendly Design</li>
+                 <li>Full Shortcodes</li>
+                 <li>Fully Editable PSD</li>
+             </ul>
+             <div class="design-purchase__btn">
+                 <a class="btn btn-turquoise" href="/">PURCHASE NOW</a>
+             </div>
+         </div>
+
      </div>
  </section>
 </body>

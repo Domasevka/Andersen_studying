@@ -145,7 +145,7 @@ a {
     padding: 0 36px;
     margin: 0 12px;
     position: relative;
-    transition: all 0.25s ease 0s;
+    transition: background-color 1s ease-in-out 0s;
 }
 
 .btn-turquoise {
@@ -698,10 +698,62 @@ a {
     background: #8a8a8a;
 }
 
+.overlay {
+    position: absolute;
+    top: -3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: #c2c2c2;
+    border-top: 3px solid #c2c2c2;
+    transition: .5s ease;
+}
+
+.section-work__col-active:hover .overlay {
+    opacity: 0;
+}
+
+.section-work__icons {
+    padding: 20px 0 0;
+}
+
+.section-work__col-active a {
+    display: inline-block;
+    height: 42px;
+    width: 43px;
+    background-image: url(../img/sprite.png);
+}
+
+.col-active__icons {
+    padding-top: 40px;
+}
+
+.section-work__col-active .fa-chain {
+    background-position: -334px -8px;
+}
+
+.section-work__col-active .fa-search {
+    background-position: -382px -8px;
+}
+
+.fa-chain:hover   {
+    background-position: -334px -50px;
+}
+
+.fa-search:hover   {
+    background-position: -382px -50px;
+}
+
+
+
 .section-work__col-active {
     background: #f8fcfe;
     border-top: 3px solid #18cfab;
     color: #18cfab;
+    position: relative;
 }
 
 .section-work__col-active p {
@@ -710,7 +762,7 @@ a {
     margin: 28px 0 6px;
 }
 
-.section-work__col-active div {
+.section-work__col-active span {
     color: #8a8a8a;
 }
 
@@ -736,6 +788,7 @@ a {
     line-height: 61px;
     margin: 0 12px;
     padding: 0 24px;
+    transition: background-color 1s ease-in-out 0s;
 }
 
 .section-work__btn::before {
@@ -754,7 +807,7 @@ a {
 
 .section-work__btn:hover {
     background-color: #00b294;
-    box-shadow: 0 #007e67 inset;
+
 }
 
 .service {
@@ -970,11 +1023,12 @@ a {
     background: #18cfab;
 }
 
-.section-news__col_active p {
+.section-news__col_active .section-news__col_bg span {
     color: #18cfab;
 }
 
-.section-news__col_bg p {
+.section-news__col_bg span {
+    display: block;
     font-weight: 700;
     font-size: 18px;
     margin: 0;
@@ -1206,7 +1260,7 @@ a {
     text-align: center;
     font-size: 13px;
     border-radius: 4px;
-    transition-duration: 1s;
+    transition: background-color 1s ease-in-out 0s;
 }
 
 .price__button:hover {
@@ -1413,7 +1467,7 @@ a {
 }
 
 .team__wrap {
-    margin: 61px 0 50px;
+    margin: 61px 0 59px;
 
 }
 .card {
@@ -1467,6 +1521,11 @@ a {
     position: absolute;
     left: 5px;
     top: 5px;
+    transition: background-color 0.35s ease-in-out 0s;
+}
+
+.card-active a:hover .card__circle {
+    background-color: #fff;
 }
 
 .card__info {
@@ -1483,21 +1542,21 @@ a {
     color: #2e4a5b;
 }
 
-.card__info p {
-    margin: 0;
-}
-
 .card__info_spec {
-    font-size: 13px;
     color: #18cfab;
-    padding: 0px 25px 12px;
+    display: block;
+    font-size: 13px;
+    padding: 0px 25px 13px;
+    margin: 0;
 }
 
 .card__info_name {
     color: #fff;
-    font-size: 14px;
+    display: block;
+    font-size: 15px;
     font-weight: 600;
-    padding: 16px 25px 0;
+    margin: 0;
+    padding: 15px 24px 0;
 }
 
 .card__social {
@@ -1573,6 +1632,90 @@ a {
 
 .card__social a:last-child:hover {
     border-color: #18cfab;
+}
+
+.design {
+    background: #233641;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    line-height: 25px;
+}
+
+.design__title {
+    font-size: 47px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 134px;
+}
+
+.design__text {
+    color: #18cfab;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 41px 0;
+}
+
+.design-img__wrap {
+    float: left;
+    position: relative;
+    right: 32%;
+    top: 60px;
+}
+
+.design-list__wrap {
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    min-height: 658px;
+}
+
+.design__list-item {
+    list-style-type: none;
+    margin-top: 68px;
+    margin-left: 75px;
+    font-size: 12px;
+    line-height: 35px;
+    float: left;
+}
+.design-item {
+    padding: 3px 0;
+}
+.design__list-text {
+    list-style-type: none;
+    line-height: 35px;
+    margin-top: 68px;
+    font-size: 12px;
+    margin-left: 75px;
+}
+
+.design-item_last{
+    font-size: 14px;
+    margin-left: 45px;
+}
+
+.design__list-text li {
+    font-size: 14px;
+    color: #fff;
+}
+
+.design-item:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.design-item:before {
+    background-image: url(../img/sprite.png);
+    background-position: -28px -398px;
+    width: 25px;
+    height: 29px;
+}
+
+.design-purchase__btn {
+    margin: 65px 99px;
 }
 
 @media screen and (max-width: 1450px) {
