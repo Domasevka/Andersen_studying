@@ -1,0 +1,369 @@
+@font-face {
+    font-family: "MyriadProRegular";
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: "MyriadProRegular", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.section-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    min-height: 520px;
+    background: url(../img/header.jpg) no-repeat 50% 0;
+    background-size: cover;
+}
+
+.slideshow-container {
+    max-width: 1350px;
+    position: relative;
+    margin: auto;
+    height: 520px;
+}
+
+.slideshow__prev, .slideshow__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+}
+
+.slideshow__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow__prev:hover, .slideshow__next:hover {
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.7;
+}
+
+.header {
+    background-color: #fff;
+    top: 0;
+    position: relative;
+}
+
+.header__logo {
+    float: left;
+}
+
+.logo__img {
+    display: block;
+    background: url("../img/logo.png") no-repeat;
+    height: 60px;
+    width: 256px;
+    margin: 28px 0px 0 16px;
+}
+
+.menu {
+    float: right;
+    margin: 76px 60px 19px 0;
+}
+
+.menu__item {
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.menu__link {
+    color: #668333;
+}
+
+.menu_item_active .menu__link {
+    color: #4999af;
+}
+
+.nav {
+    font-size: 14px;
+    opacity: 0.8;
+    background-color: #4999af;
+    list-style-type: none;
+    position: absolute;
+    top: 20px;
+    right: -12px;
+    margin: 0;
+    padding: 0 59px 0 10px;
+}
+
+.nav:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: solid 12px #4999af;
+    border-top: solid 12px transparent;
+    opacity: 0.5;
+}
+
+.nav:before {
+    border-left: solid 12px #4999af;
+    border-bottom: solid 12px transparent;
+}
+
+.nav:before {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    right: 0;
+    border-top: solid 24px #4999af;
+    opacity: 0.5;
+}
+
+.nav__item {
+    display: inline-block;
+    margin: 10px 12px 10px 0px;
+}
+
+.nav_item_border:after {
+    border-right: 1px solid #fff;
+    content: '';
+    font-size: 8px;
+    margin-left: 0;
+}
+
+.nav__link {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.banner-welcome {
+    background-color: #4695ab;
+    bottom: -360px;
+    display: inline-block;
+    font-size: 14px;
+    opacity: 0.85;
+    line-height: 40px;
+    left: 0;
+    padding: 16px 47px 20px 20px;
+    position: absolute;
+}
+
+.banner-welcome__title {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.banner-welcome__text {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 100;
+    margin: 0;
+}
+
+.about {
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.about-columns {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-column {
+    flex-basis: 320px;
+    height: 260px;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.column {
+    display: block;
+    height: 200px;
+    width: 320px;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.column_img_stories {
+    background: url("../img/stories.jpg") no-repeat;
+}
+
+.column_img_give_online {
+    background: url("../img/give_online.jpg") no-repeat;
+}
+
+.column_img_prayer {
+    background: url("../img/prayer.jpg") no-repeat;
+}
+
+.column-name {
+    color: #fff;
+    font-size: 42px;
+    right: 25px;
+    bottom: 0;
+    margin: 57px 0;
+    position: absolute;
+    text-shadow: 1px 1px 2px #6e6e6e, 0 0 10px #a3a3a3;
+}
+
+.column-info {
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    opacity: 0.85;
+    background-color: #4695ab;
+    padding: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.column-info {
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    opacity: 0.9;
+    background-color: #4695ab;
+    padding: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.column_info_give {
+    background-color: #7e964f;
+}
+
+.column_info_prayer{
+    background-color: #f17c69;
+}
+
+.column_s {
+    flex-basis: 500px;
+    height: 260px;
+    padding: 0;
+}
+
+.column-events__title {
+    color: #60a4b7;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+}
+.events__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.events__item-date {
+    color: #668333;
+    display: block;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    padding: 7px 0;
+    line-height: 22px;
+}
+
+.events__item-date strong {
+    font-size: 30px;
+    display: block;
+}
+
+.events__item {
+    border-top: 1px solid #d2cdc9;
+    margin: 21px 0 10px;
+    position: relative;
+    padding: 11px 0 0px 55px;
+    line-height: 12px;
+}
+
+.events__list li:last-child {
+    border-top: none;
+}
+
+@media screen and (max-width: 960px) {
+    .section-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .about-columns {
+        margin-top: 0;
+    }
+
+    .column {
+        margin-top: 30px;
+    }
+
+    .banner-welcome {
+        padding: 16px 20px 20px 20px;
+    }
+    .banner-welcome__title {
+        font-size: 25px;
+    }
+
+    .banner-welcome__text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
