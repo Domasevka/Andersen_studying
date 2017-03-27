@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-
 <section class="banner  row">
     <div class="slideshow-container">
         <div class="section-wrapper">
@@ -28,31 +27,43 @@
                     <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
                     <li class="nav__item nav_item_icon"><a href="#" class="nav_link_icon"></a></li>
                 </ul>
-                <div class="banner-welcome">
-                    <h1 class="banner-welcome__title">Welcome to SevenOaks</h1>
-                    <p class="banner-welcome__text"><strong>website</strong> which is run by the<br>friends of SevenOaks</p>
-                </div>
             </header>
-
         </div>
-            <a class="slideshow__prev" href="#">&#10094;</a>
-            <a class="slideshow__next" href="#">&#10095;</a>
+            <a class="slideshow-link slideshow-link_prev" href="#">&#10094;</a>
+            <a class="slideshow-link slideshow-link_next" href="#">&#10095;</a>
+        <div class="banner-welcome">
+            <h1 class="banner-welcome__title">Welcome to SevenOaks</h1>
+            <p class="banner-welcome__text"><strong>website</strong> which is run by the<br>friends of SevenOaks</p>
+        </div>
+        <div class="banner-welcome banner_welcome_red">
+            <h1 class="banner-welcome__title">Welcome to SevenOaks</h1>
+            <p class="banner-welcome__text"><strong>website</strong> which is run by the<br>friends of SevenOaks</p>
+        </div>
+        <div class="banner-welcome banner_welcome_green">
+            <h1 class="banner-welcome__title">Welcome to SevenOaks</h1>
+            <p class="banner-welcome__text"><strong>website</strong> which is run by the<br>friends of SevenOaks</p>
+        </div>
     </div>
 </section>
+<div class="dots row">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
 <section class="about row">
     <div class="section-wrapper">
         <div class="about-columns flex">
             <div class="column column_img_stories">
                 <h2 class="column-name">STORIES</h2>
-                <span class="column-info column_info_stories">Read stories of Seven Oaks</span>
+                <a class="column-info column_info_stories">Read stories of Seven Oaks</a>
             </div>
             <div class="column column_img_give_online">
                 <h2 class="column-name">GIVE ONLINE</h2>
-                <span class="column-info column_info_give">Quick & easy online giving</span>
+                <a class="column-info column_info_give">Quick & easy online giving</a>
             </div>
             <div class="column column_img_prayer">
                 <h2 class="column-name">PRAYER</h2>
-                <span class="column-info column_info_prayer">Submit your prayer request</span>
+                <a class="column-info column_info_prayer">Submit your prayer request</a>
             </div>
         </div>
     </div>
@@ -60,44 +71,67 @@
 <section class="events row">
     <div class="section-wrapper">
         <div class="about-columns flex">
-            <div class="column_s">
-                <h2 class="column-events__title"> UPCOMING EVENTS</h2>
+            <div class="column_s column-events">
+                <h2 class="column__title"> UPCOMING EVENTS</h2>
                 <ul class="events__list">
                     <li class="events__item">
-                        <span class="events__item-date"><strong>27</strong>JULY</span>
+                        <span class="events__item-date"><strong>20</strong>JULY</span>
                         <h3 class="events__item-name">FAMILY SUNDAY</h3>
-                        <span class="events__item-info">Read stories of Seven Oaks</span>
-                        <a class="button" href="#">LOAD MORE</a>
+                        <span class="events__item-info">Sunday | 9:30am</span>
+                        <a class="button" href="#">MORE</a>
                     </li>
                     <li class="events__item">
-                        <span class="events__item-date"><strong>27</strong>JULY</span>
+                        <span class="events__item-date"><strong>20</strong>JULY</span>
                         <h3 class="events__item-name">FAMILY SUNDAY</h3>
-                        <span class="events__item-info">Read stories of Seven Oaks</span>
-                        <a class="button" href="#">LOAD MORE</a>
+                        <span class="events__item-info">Sunday | 9:30am</span>
+                        <a class="button" href="#">MORE</a>
                     </li>
                     <li class="events__item">
-                        <span class="events__item-date"><strong>27</strong>JULY</span>
+                        <span class="events__item-date"><strong>20</strong>JULY</span>
                         <h3 class="events__item-name">FAMILY SUNDAY</h3>
-                        <span class="events__item-info">Read stories of Seven Oaks</span>
-                        <a class="button" href="#">LOAD MORE</a>
+                        <span class="events__item-info">Sunday | 9:30am</span>
+                        <a href="#" class="button">MORE</a>
                     </li>
                 </ul>
             </div>
-            <div class="column_s">
-                <ul>
-                    <h2 class="">SEVENOAKS</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
+            <div class="column_s column-sevenoaks">
+                <h2 class="column__title">SEVENOAKS</h2>
+                <div class="sevenoaks__text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <a>READ MORE >></a>
-
-                </ul>
+                    <a href="#" class="sevenoaks_text_more">READ MORE &#187;</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<footer>
-
+<footer class="footer row">
+    <div class="section-wrapper">
+        <div class="footer-columns flex">
+                <div class="footer-column footer_column_signup">
+                    <h2 class="footer-column__title">SIGNUP TO OUR NEWSLETTER</h2>
+                    <a href="#" class="button button_size_s">EMAIL SIGNUP</a>
+                </div>
+                <div class="footer-column footer_column_service">
+                    <h2 class="footer-column__title">SERVICE TIMES</h2>
+                    <span class="footer-column__text">Sundays at 9:30 & 11:30 AM</span>
+                    <span class="footer-column__text column_text_s">Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div class="footer-column footer_column_connect">
+                    <h2 class="footer-column__title">CONNECT WITH US</h2>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social__link"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="footer-social__link"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="footer-social__link"><i class="fa fa-youtube"></i></a>
+                        <a href="#" class="footer-social__link"><i class="fa fa-paypal"></i></a>
+                        <a href="#" class="footer-social__link"><i class="fa fa-email"></i></a>
+                    </div>
+                </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright__text">&#169;Copyright 2013 SevenOaks. All rights reserved.  Privacy Policy  |  Share This</p>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
