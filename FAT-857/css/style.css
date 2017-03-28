@@ -39,7 +39,7 @@ a {
 }
 
 .slideshow-container {
-    max-width: 1350px;
+    max-width: 1400px;
     position: relative;
     margin: auto;
     height: 520px;
@@ -69,12 +69,15 @@ a {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -22px;
+    padding: 27px 15px;
+    margin-top: -35px;
     color: white;
     font-weight: bold;
     font-size: 35px;
+    line-height: 35px;
     transition: 0.6s ease;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.7;
 }
 
 .slideshow-link_next {
@@ -82,8 +85,7 @@ a {
 }
 
 .slideshow-link:hover {
-    background-color: rgba(0,0,0,0.8);
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .header {
@@ -108,12 +110,13 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    margin: 76px 60px 19px 0;
+    margin: 78px 65px 16px 0;
+    padding: 0;
 }
 
 .menu__item {
     display: inline-block;
-    margin: 5px;
+    margin: 5px 21px;
     font-size: 14px;
 }
 
@@ -267,7 +270,7 @@ a {
 .about-columns {
     margin-top: 30px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .about-column {
@@ -355,6 +358,7 @@ a {
 }
 
 .column_s {
+    box-sizing: border-box;
     flex-basis: 480px;
     height: 260px;
     padding: 0;
@@ -362,10 +366,12 @@ a {
 
 .column-events {
     margin-right: 20px;
+    padding-right: 10px;
 }
 
 .column-sevenoaks {
     margin-left: 20px;
+    padding-left: 10px;
 }
 
 .column__title {
@@ -422,6 +428,12 @@ a {
     line-height: 12px;
 }
 
+.events-columns {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .button {
     background-color: #4999af;
     border: 1px solid #4999af;
@@ -469,9 +481,9 @@ a {
 }
 
 .footer-columns {
-    margin-top: 15px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 15px;
 }
 
 .footer-column {
@@ -495,7 +507,7 @@ a {
 
 .footer_column_connect {
     width: 195px;
-    margin-right: 47px;
+    margin-right: 53px;
 }
 
 .footer-column__title {
@@ -505,11 +517,22 @@ a {
 }
 
 .button_size_s {
-    padding: 10px 24px;
-    display: block;
-    position: relative;
-    top: 7px;
-    width: 223px;
+     display: inline-block;
+     padding: 10px 80px;
+     background-color: #4999af;
+     border: 1px solid #4999af;
+     color: #fff;
+     text-align: center;
+     font-size: 13px;
+     line-height: 13px;
+     border-radius: 4px;
+     transition: 1s ease-in-out 0s;
+     margin: 7px 0 0;
+ }
+
+.button_size_s:hover {
+    background-color: #5abed9;
+    border-color: #5abed9;
 }
 
 .footer-column__text {
@@ -525,18 +548,69 @@ a {
     margin-top: 5px;
 }
 
-.fa {
-    content: '';
-    display: inline-block;
-    background-image: url(../img/sprite.png);
-    background-position: 0 -21px;
+.footer-social__link {
     width: 33px;
     height: 33px;
+    background-color: #f1715e;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin-right: 2px;
+    padding: 0;
+    position: relative;
+}
+
+.fa {
+    content: '';
+    display: block;
+    background-image: url(../img/sprite.png);
+    position: absolute;
+}
+
+.fa-facebook {
+    background-position: -38px -0px;
+    width: 10px;
+    height: 20px;
+    top: 5px;
+    right: 12px;
+}
+
+.fa-twitter {
+    background-position: -48px -0px;
+    width: 24px;
+    height: 20px;
+    top: 7px;
+    right: 4px;
+}
+
+.fa-youtube {
+    background-position: -72px -0px;
+    width: 22px;
+    height: 20px;
+    top: 6px;
+    right: 4px;
+}
+
+.fa-paypal {
+    background-position: -92px -0px;
+    width: 22px;
+    height: 20px;
+    top: 6px;
+    right: 4px;
+}
+
+.fa-email {
+    background-position: -114px -0px;
+    width: 22px;
+    height: 20px;
+    top: 8px;
+    right: 5px;
 }
 
 .copyright {
     border-top: 1px solid #b3b3b3;
-    padding: 17px 0 36px;
+    padding: 6px 0 35px;
 }
 
 .copyright__text {
@@ -544,49 +618,99 @@ a {
     font-size: 12px;
     margin: 0;
 }
-.footer-social {
-    margin-top: 30px;
+
+.copyright__privacy {
+    display: inline-block;
+    color: #b3b3b3;
+    font-weight: 700;
+    margin-top: 10px;
 }
+
+.copyright__privacy:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 32px;
+}
+
+.toggle {
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
-    .section-wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-
-    .about-columns {
-        margin-top: 30px;
-    }
-
     .column {
         margin-top: 30px;
+        width: 600px;
+        background-size: cover;
     }
-
     .banner-welcome {
+        box-sizing: border-box;
         padding: 16px 20px 20px;
-        width: 460px;
+        width: 600px;
         left: 50%;
-        margin-left: -250px;
+        margin-left: -300px;
         text-align: center;
         font-size: 12px;
     }
     .banner-welcome__title {
-        font-size: 25px;
+        font-size: 30px;
     }
-
     .banner-welcome__text {
-        font-size: 25px;
+        font-size: 30px;
     }
     .column-events {
         margin: 0;
     }
     .column-sevenoaks {
         margin: 30px 0 0;
-
+    }
+    .about-columns {
+        margin: 0 10px;
+        justify-content: center;
+    }
+    .events {
+        margin: 0 10px;
+    }
+    .events-columns {
+        justify-content: center;
+    }
+    .column_s {
+        flex-basis: 600px;
+        padding: 0;
+    }
+    .footer-columns {
+        justify-content: center;
+        margin: 0 10px;
+    }
+    .copyright{
+        margin: 0 10px;
+    }
+    .footer_column_signup {
+        margin: 0;
+        width: 300px;
+    }
+    .footer_column_service {
+        margin: 0;
+        width: 300px;
+    }
+    .footer_column_connect {
+        margin: 0;
+        width: 600px;
+    }
+    .footer-column__text {
+        margin-top: 19px;
+    }
+    .footer-column {
+        justify-content: center;
     }
 }
+@media screen and (max-width: 636px) {
+    .footer_column_connect {
+        width: 300px;
+    }
 
+}
 @media screen and (max-width: 767px) {
     .nav {
         font-size: 12px;
@@ -616,6 +740,9 @@ a {
         width: 100%;
         justify-content: space-around;
     }
+    .menu__item {
+        margin: 5px 5px;
+    }
     .slideshow-link {
         display: none;
     }
@@ -627,10 +754,11 @@ a {
         margin-top: 30px;
     }
     .banner-welcome {
-        padding: 16px 10px 20px;
-        width: 100%;
         margin-left: -50%;
+        padding: 16px 10px 20px;
         overflow: hidden;
+        width: 100%;
+        top: 50%;
     }
     .banner-welcome__title {
         font-size: 20px;
@@ -639,20 +767,9 @@ a {
         font-size: 20px;
     }
     .column-sevenoaks {
-        height: 300px;
+        height: 355px;
     }
-    .footer_column_signup {
-        margin: 0;
-        width: 300px;
-    }
-    .footer_column_service {
-        margin: 0;
-        width: 300px;
-    }
-    .footer_column_connect {
-        margin: 0;
-        width: 300px;
-    }
+
     .nav li:last-child {
         padding-top: 5px;
         margin-right: 0;
@@ -661,30 +778,46 @@ a {
     .nav_item_border:after {
         border-right: none;
     }
-    .about-columns {
-        margin-top: 0;
+    .footer-column {
+        text-align: center;
     }
-
 }
 
 
 @media screen and (max-width: 320px) {
-    .section-wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-    .nav {
-
-    }
-    .banner-welcome {
-        padding: 16px 20px 20px;
-        width: 358px;
-        margin-left: -200px;
-    }
     .menu__item {
         font-size: 12px;
+    }
+    .menu {
+        display: none;
+    }
+    .toggle {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+    }
+    .toggle::before {
+        color: #fff;
+        content: '\2261';
+        font-size: 30px;
+
+    }
+    .nav_item_toggle {
+        margin: 0;
+        padding: 0;
+    }
+    .nav li:last-child {
+        margin: 0;
+    }
+    .nav:before {
+        display: none;
+    }
+    .nav__link {
+        margin: 0;
+    }
+    .logo__img {
+        margin: 45px auto 15px;
     }
 }
 
