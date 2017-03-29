@@ -5,6 +5,7 @@
     font-weight: normal;
 }
 
+
 body {
     font-family: "MyriadProRegular", sans-serif;
     font-size: 16px;
@@ -34,7 +35,7 @@ a {
 
 .banner {
     min-height: 520px;
-    background: url(../img/header.jpg) no-repeat 50% 0;
+    background: url('../img/header.png') no-repeat 50% 0;
     background-size: cover;
 }
 
@@ -68,16 +69,26 @@ a {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    padding: 27px 15px;
-    margin-top: -35px;
-    color: white;
+    padding: 31px 13px;
+    margin-top: -24px;
     font-weight: bold;
-    font-size: 35px;
-    line-height: 35px;
     transition: 0.6s ease;
     background-color: rgba(0,0,0,0.8);
     opacity: 0.7;
+}
+.slideshow_link_style  {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
 }
 
 .slideshow-link_next {
@@ -133,7 +144,7 @@ a {
 }
 
 .nav {
-    font-size: 14px;
+    font-size: 12px;
     opacity: 0.8;
     background-color: #4999af;
     list-style-type: none;
@@ -141,7 +152,7 @@ a {
     top: 20px;
     right: -12px;
     margin: 0;
-    padding: 0 0px 0 12px;
+    padding: 0;
 }
 
 .nav:after {
@@ -167,34 +178,35 @@ a {
     border-top: solid 24px #4999af;
     opacity: 0.5;
 }
-.nav:before {
-    content: '';
-    position: absolute;
-    bottom: -11px;
-    right: 0;
-    border-top: solid 24px #4999af;
-    opacity: 0.5;
-}
-.nav li:last-child {
-    margin: 0 20px 0 23px;
+
+.nav__link_icon {
+    position: relative;
 }
 
-.nav_link_icon {
-    content: '';
-    display: block;
-    background-image: url(../img/sprite.png);
-    background-position: 0px 0px;
-    width: 19px;
-    height: 18px;
-    vertical-align: middle;
+.icon-search-1 {
+    width: 1.3em;
+    height: 1.3em;
+    fill: #fff;
+    position: absolute;
+    right: -20px;
+    top: -1px;
 }
 
 .nav__item {
     display: inline-block;
-    margin: 10px 12px 9px 0px;
+    margin: 10px 12px 11px 0px;
+}
+.nav_item_icon {
+    padding: 0 20px 0 0;
+
 }
 
-
+.icon-menu {
+    width: 1.3em;
+    height: 1.3em;
+    fill: #fff;
+    padding-top: 8px;
+}
 .nav_item_border:after {
     border-right: 1px solid #fff;
     content: '';
@@ -273,32 +285,27 @@ a {
     justify-content: space-between;
 }
 
-.about-column {
-    flex-basis: 320px;
-    height: 260px;
-    padding: 10px;
-    margin-bottom: 60px;
-}
-
 .column {
-    display: block;
-    height: 200px;
     width: 320px;
+    height: 200px;
     padding: 0;
     box-sizing: border-box;
     position: relative;
 }
 
-.column_img_stories {
-    background: url("../img/stories.jpg") no-repeat;
+.column_img_prayer {
+    background: url("../img/prayer@2x.png") no-repeat;
+    background-size: 320px 200px;
 }
 
 .column_img_give_online {
-    background: url("../img/give_online.jpg") no-repeat;
+    background: url("../img/give_online@2x.png") no-repeat;
+    background-size: 320px 200px;
 }
 
-.column_img_prayer {
-    background: url("../img/prayer.jpg") no-repeat;
+.column_img_stories {
+    background: url("../img/stories@2x.png") no-repeat;
+    background-size: 320px 200px;
 }
 
 .column-name {
@@ -322,6 +329,14 @@ a {
     right: 0;
     bottom: 0;
 }
+.icon-right-small {
+    width: 1.3em;
+    height: 1.3em;
+    position: absolute;
+    fill: #fff;
+    right: 15px;
+    bottom: 13px;
+}
 
 .column-info:after {
     content: '';
@@ -335,18 +350,6 @@ a {
     box-sizing: border-box;
     vertical-align: middle;
     margin-left: 10px;
-}
-
-.column-info:before {
-    content: '';
-    display: block;
-    background-image: url(../img/sprite.png);
-    background-position: -20px -0px;
-    width: 19px;
-    height: 16px;
-    position: absolute;
-    top: 18px;
-    right: 15px;
 }
 
 .column_info_give {
@@ -561,53 +564,6 @@ a {
     position: relative;
 }
 
-.fa {
-    content: '';
-    display: block;
-    background-image: url(../img/sprite.png);
-    position: absolute;
-}
-
-.fa-facebook {
-    background-position: -38px -0px;
-    width: 10px;
-    height: 20px;
-    top: 5px;
-    right: 12px;
-}
-
-.fa-twitter {
-    background-position: -48px -0px;
-    width: 24px;
-    height: 20px;
-    top: 7px;
-    right: 4px;
-}
-
-.fa-youtube {
-    background-position: -72px -0px;
-    width: 22px;
-    height: 20px;
-    top: 6px;
-    right: 4px;
-}
-
-.fa-paypal {
-    background-position: -92px -0px;
-    width: 22px;
-    height: 20px;
-    top: 6px;
-    right: 4px;
-}
-
-.fa-email {
-    background-position: -114px -0px;
-    width: 22px;
-    height: 20px;
-    top: 8px;
-    right: 5px;
-}
-
 .copyright {
     border-top: 1px solid #b3b3b3;
     padding: 6px 0 35px;
@@ -638,7 +594,55 @@ a {
     display: none;
 }
 
+.icon {
+    display: inline-block;
+    stroke-width: 0;
+    stroke: currentColor;
+}
+
+.icon-facebook {
+    height: 1.3em;
+    width: 1.0em;
+    padding: 4px 8px;
+    fill: #525252;
+}
+
+.icon-twitter-bird {
+    width: 1.3em;
+    height: 1.3em;
+    padding: 4px 7px;
+    fill: #525252;
+}
+
+.icon-youtube {
+    width: 1.2em;
+    height: 1.5em;
+    padding: 4px 7px;
+    fill: #525252;
+}
+
+.icon-paypal {
+    width: 1.2em;
+    height: 1.6em;
+    padding: 2px 8px;
+    fill: #525252;
+}
+
+.icon-email {
+    width: 1.2em;
+    height: 1.6em;
+    padding: 2px 7px;
+    fill: #525252;
+}
+
+
+
 @media screen and (max-width: 1000px) {
+    .banner {
+        min-height: 520px;
+        background: url('../img/header.png') no-repeat;
+        background-size: cover;
+    }
     .column {
         margin-top: 30px;
         width: 600px;
@@ -705,15 +709,9 @@ a {
         justify-content: center;
     }
 }
-@media screen and (max-width: 636px) {
-    .footer_column_connect {
-        width: 300px;
-    }
 
-}
 @media screen and (max-width: 767px) {
     .nav {
-        font-size: 12px;
         top: 0;
         right: 0;
         margin: 0;
@@ -766,23 +764,29 @@ a {
     .banner-welcome__text {
         font-size: 20px;
     }
+
     .column-sevenoaks {
         height: 355px;
-    }
-
-    .nav li:last-child {
-        padding-top: 5px;
-        margin-right: 0;
     }
 
     .nav_item_border:after {
         border-right: none;
     }
+
     .footer-column {
         text-align: center;
     }
+    .icon-search-1 {
+        top: -6px;
+    }
 }
 
+@media screen and (max-width: 636px) {
+    .footer_column_connect {
+        width: 300px;
+    }
+
+}
 
 @media screen and (max-width: 320px) {
     .menu__item {
@@ -795,21 +799,15 @@ a {
         display: block;
         margin: 0;
         padding: 0;
-
     }
-    .toggle::before {
-        color: #fff;
-        content: '\2261';
-        font-size: 30px;
+    .toggle {
 
     }
     .nav_item_toggle {
         margin: 0;
         padding: 0;
     }
-    .nav li:last-child {
-        margin: 0;
-    }
+
     .nav:before {
         display: none;
     }
@@ -819,7 +817,38 @@ a {
     .logo__img {
         margin: 45px auto 15px;
     }
+    .icon-search-1 {
+        top: -2px;
+    }
 }
+
+/* 1.0 dpr */
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi){
+    .column_img_prayer {
+        background: url("../img/prayer@2x.png") no-repeat;
+        background-size: 320px 200px;
+    }
+    .column_img_give_online {
+        background: url("../img/give_online@2x.png") no-repeat;
+        background-size: 320px 200px;
+    }
+    .column_img_stories {
+        background: url("../img/stories@2x.png") no-repeat;
+        background-size: 320px 200px;
+    }
+    .banner {
+        background: url('../img/header@2x.png') no-repeat 50% 0;
+        background-size: 1400px 520px;
+    }
+}
+
+
+
+
+
+
 
 
 
